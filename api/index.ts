@@ -1,6 +1,3 @@
-import { createServer } from "../src/server";
+import App from "../src/app";
 
-const server = createServer();
-
-export default server;
-
+export default App.getInstance().getServer();

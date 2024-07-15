@@ -1,10 +1,6 @@
-import { createServer } from "./src/server";
+require('dotenv').config();
 
-const PORT = Number(process.env.port) || 3000;
+import App from "./src/app";
 
-const server = createServer();
-
-server.listen(PORT, () => {
-  console.log(`Express running at PORT:${PORT}`);
-});
+App.getInstance().startServer();
 
