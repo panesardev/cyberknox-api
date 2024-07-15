@@ -5,7 +5,9 @@
   "main": "index.ts",
   "scripts": {
     "dev": "nodemon --exec ts-node index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "git": "git add . && git commit -m refactor",
+    "deploy": "git push origin master"
   },
   "license": "ISC",
   "dependencies": {

@@ -44,7 +44,7 @@ export default class App {
     return this.server;
   }
 
-  startServer() {
+  run() {
     const PORT = Number(process.env.port);
     this.getServer().listen(PORT, () =>
       console.log(`Express running at PORT:${PORT}`),
